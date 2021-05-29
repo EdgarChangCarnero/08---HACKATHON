@@ -4,7 +4,7 @@
 let argumentoUno = Number(prompt('Ingrese el primer argumento:'));
 let argumnetoDos = Number(prompt('Ingrese el segundo argumento:'));
 let preguntaUno = argumentoUno + argumnetoDos;
-document.write(`El resultado es: ${preguntaUno} <br>`);
+document.write(`1. El resultado es: ${preguntaUno} <br>`);
 
 // 2. Un estudiante realiza 4 exámenes, calcular el promedio de estos
 
@@ -14,21 +14,21 @@ let examenTres = Number(prompt('Ingrese la Nota del tercer examen:'))
 let examenCuatro = Number(prompt('Ingrese la Nota del cuarto examen:'))
 let sumaExamenes = examenUno + examenDos + examenTres + examenCuatro;
 let promedio = sumaExamenes / 4;
-document.write(`El promedio es: ${promedio}<br>`);
+document.write(`2. El promedio de examenes es: ${promedio}<br>`);
 
 //3.Calcular el área de un rectángulo
 
 let altura = Number(prompt('Ingrese la altura del rectángulo:'));
 let base = Number(prompt('Ingrese la base del rectángulo:'));
 let area = altura * base;
-document.write(`El área del rectángulo es: ${area}<br>`);
+document.write(`3. El área del rectángulo es: ${area}<br>`);
 
 //4. Calcular el área de un triángulo
 
 let baseT = Number(prompt('Ingre la base del triángulo'));
 let alturaT = Number(prompt('Ingrese la altura del triángulo'));
 let areaT = (baseT * alturaT) / 2;
-document.write(`El área del triángulo es: ${areaT}<br>`);
+document.write(`4. El área del triángulo es: ${areaT}<br>`);
 
 //5. Calcular el área de una circunferencia
 
@@ -36,7 +36,7 @@ const pi = 3.14;
 let radio = Number(prompt('Ingrese el radio de la circunferencia'));
 let radioExponente = Math.pow(radio, 2);
 let areaCirc = pi * radioExponente;
-document.write(`El área de la circunferencia es: ${areaCirc}<br>`);
+document.write(`5. El área de la circunferencia es: ${areaCirc}<br>`);
 
 // 6.Determinar el sueldo semanal de un trabajador basándose en sus horas 
 // trabajadas y su salario de hora hombre
@@ -45,7 +45,7 @@ let horasTrab = Number(prompt('Ingrese las horas trabajadas'));
 let salarioHoraHombre = Number(prompt('Ingrese el salario de horas hombre'));
 const diasSemana = 7;
 let sueldoSemanal = horasTrab * salarioHoraHombre * 7;
-document.write(`El suldo semanal de un trabajador es: ${sueldoSemanal}<br>`);
+document.write(`6. El suldo semanal de un trabajador es: ${sueldoSemanal}<br>`);
 
 //7. Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero. 
 // Para cada pedido, tiene que proporcionar las medidas de la tela en pulgadas, 
@@ -57,7 +57,7 @@ let metros = Number(prompt('Ingrese los metros de tela'));
 const unaPulgada = 0.0254;
 let pulgadasAPedir = (metros / unaPulgada);
 let redondeoADosDecimales = pulgadasAPedir.toFixed(2);
-document.write(`Las pulgadas que debe pedir es: ${redondeoADosDecimales}<br>`);
+document.write(`7. Las pulgadas que debe pedir es: ${redondeoADosDecimales}<br>`);
 
 //8. Una empresa importadora desea determinar cuántos dólares puede adquirir 
 //con equis cantidad de dinero peruano
@@ -65,7 +65,7 @@ document.write(`Las pulgadas que debe pedir es: ${redondeoADosDecimales}<br>`);
 let dolares = Number(prompt('Ingrese el número de dolares'));
 const cambioSoles = 3.81;
 let dineroPeruano = dolares * cambioSoles;
-document.write(`La cantidad de dinero en dinero peruano es: ${dineroPeruano}<br>`);
+document.write(`8. La cantidad de dinero en dinero peruano es: ${dineroPeruano}<br>`);
 
 // 9. Una empresa que contrata personal requiere determinar la edad de las 
 // personas que solicitan trabajo, pero cuando se les realiza la entrevista sólo se 
@@ -74,7 +74,7 @@ document.write(`La cantidad de dinero en dinero peruano es: ${dineroPeruano}<br>
 let anioNacieron = Number(prompt('Ingrese el año que nacieron'));
 const anioActual = 2021;
 let edad = anioActual - anioNacieron;
-document.write(`La edad de la persona es: ${edad}<br>`);
+document.write(`9. La edad de la persona es: ${edad}<br>`);
 
 //10.Se tiene el nombre y la edad de tres personas. Se desea saber el nombre y la 
 //edad de la persona de menor edad
@@ -87,11 +87,11 @@ let edadPersonaTres = Number(prompt('Ingrese la edad de la tercera persona'));
 let nombrePersonaTres = String(prompt('Ingrese el nombre de la tercera persona'));
 
 if (edadPersonaUno < edadPersonaDos && edadPersonaUno < edadPersonaTres) {
-    document.write(`La edad de la persona menor es: ${edadPersonaUno} y su nombre es: ${nombrePersonaUno}<br>`);
+    document.write(`10. La edad de la persona menor es: ${edadPersonaUno} y su nombre es: ${nombrePersonaUno}<br>`);
 } else if (edadPersonaDos < edadPersonaUno && edadPersonaDos < edadPersonaTres) {
-    document.write(`La edad de la persona menor es: ${edadPersonaDos} y su nombre es: ${nombrePersonaDos}<br>`);
+    document.write(`10. La edad de la persona menor es: ${edadPersonaDos} y su nombre es: ${nombrePersonaDos}<br>`);
 } else if (edadPersonatres < edadPersonaUno && edadPersonaDos < edadPersonaTres) {
-    document.write(`La edad de la persona menor es: ${edadPersonaTres} y su nombre es: ${nombrePersona}<br>`);
+    document.write(`10. La edad de la persona menor es: ${edadPersonaTres} y su nombre es: ${nombrePersona}<br>`);
 }
 
 // 11. Se les dará un bono por antigüedad a los empleados de una tienda. Si tienen un 
@@ -109,25 +109,25 @@ let numeroAnios = Number(prompt('Ingrese el número de años'));
 
 switch (numeroAnios) {
     case 1:
-        document.write(`El bono que recibirá es $${bonoUnAnio}<br>`);
+        document.write(`11. El bono que recibirá es $${bonoUnAnio}<br>`);
         break;
     case 2:
-        document.write(`El bono que recibirá es $${bonoDosAnio}<br>`);
+        document.write(`11. El bono que recibirá es $${bonoDosAnio}<br>`);
         break;
     case 3:
-        document.write(`El bono que recibirá es $${bonoTresAnio}<br>`);
+        document.write(`11. El bono que recibirá es $${bonoTresAnio}<br>`);
         break;
     case 4:
-        document.write(`El bono que recibirá es $${bonoCuatroAnio}<br>`);
+        document.write(`11. El bono que recibirá es $${bonoCuatroAnio}<br>`);
         break;
     case 5:
-        document.write(`El bono que recibirá es $${bonoQuintoAnio}<br>`);
+        document.write(`11. El bono que recibirá es $${bonoQuintoAnio}<br>`);
         break;
     case 5:
-        document.write(`El bono que recibirá es $${bonoQuintoAnio}<br>`);
+        document.write(`11. El bono que recibirá es $${bonoQuintoAnio}<br>`);
         break;
     default:
-        document.write(`El bono que recibirá es $${bonoMasCincoAnio}<br>`);
+        document.write(`11. El bono que recibirá es $${bonoMasCincoAnio}<br>`);
         break;
 }
 
@@ -142,11 +142,11 @@ const incremento = 10 / 100;
 const incrementoAnual = salarioAnual * incremento;
 let salarioAnualMasIncrementoAnual = salarioAnual + incrementoAnual;
 let saliarioSeisAnios = salarioAnualMasIncrementoAnual * 6;
-document.write(`Salario mensual es ${salarioMensual}<br>`);
-document.write(`Salario anual es ${salarioAnual}<br>`);
-document.write(`El incremento anual es ${incremento}<br>`);
-document.write(`El salario anual + el incremento anual es ${salarioAnualMasIncrementoAnual}<br>`);
-document.write(`El salario anual + el incremento anual dentro de los 6 anios es ${saliarioSeisAnios}<br>`);
+document.write(`12. Salario mensual es ${salarioMensual}<br>`);
+document.write(`12. Salario anual es ${salarioAnual}<br>`);
+document.write(`12. El incremento anual es ${incremento}<br>`);
+document.write(`12. El salario anual + el incremento anual es ${salarioAnualMasIncrementoAnual}<br>`);
+document.write(`12. El salario anual + el incremento anual dentro de los 6 anios es ${saliarioSeisAnios}<br>`);
 
 
 // 13. Realice un algoritmo para leer las calificaciones de N alumnos y determine el 
@@ -165,8 +165,8 @@ for (let step = 0; step < numeroAlumnos; step++) {
         desaprobado += 1;
     }
 }
-document.write(`El número de aprobados es ${aprobado}<br>`);
-document.write(`El número de desaprobados es ${desaprobado}<br>`);
+document.write(`13. El número de aprobados es ${aprobado}<br>`);
+document.write(`13. El número de desaprobados es ${desaprobado}<br>`);
 
 
 // 14. Una compañía, fabrica focos de colores (verdes, blancos y rojos). Se desea 
@@ -195,10 +195,10 @@ for (let i = 0; i < numeroFocos; i++) {
             otros += 1;
     }
 }
-document.write(`El número de focos de color verde es ${verde}<br>`);
-document.write(`El número de focos de color blanco es ${blanco}<br>`);
-document.write(`El número de focos de color rojo es ${rojo}<br>`);
-document.write(`El número de focos de color otros es ${otros}<br>`);
+document.write(`14. El número de focos de color verde es ${verde}<br>`);
+document.write(`14. El número de focos de color blanco es ${blanco}<br>`);
+document.write(`14. El número de focos de color rojo es ${rojo}<br>`);
+document.write(`14. El número de focos de color otros es ${otros}<br>`);
 
 // 15. Realice un algoritmo para determinar si una persona puede votar con base en 
 // su edad en las próximas elecciones
@@ -212,7 +212,7 @@ let edad = anioActual - anioNacieron;
 */
 const mayorEdad = 18;
 if (edad >= mayorEdad) {
-    document.write(`La persona tiene ${edad}, la cual puede votar en estas elecciones`);
+    document.write(`15. La persona tiene ${edad}, la cual puede votar en estas elecciones`);
 } else {
-    document.write(`La persona tiene ${edad}, la cual NO puede votar en estas elecciones por ser menor de edad`);
+    document.write(`15. La persona tiene ${edad}, la cual NO puede votar en estas elecciones por ser menor de edad`);
 }
